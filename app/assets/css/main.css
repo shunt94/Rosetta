@@ -1,0 +1,136 @@
+.icon-small {
+  font-size: 16px;
+  vertical-align: middle; }
+
+.spacer {
+  padding-bottom: 20px; }
+
+a:hover {
+  text-decoration: none; }
+
+/* Navigation */
+.navbar-rosetta {
+  margin-bottom: 0;
+  background-color: #222; }
+  .navbar-rosetta .navbar-nav > li > a {
+    color: #ccc; }
+
+.sidebar {
+  background-color: #222;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 70px;
+  height: 100%;
+  padding-top: 75px; }
+  .sidebar li {
+    height: 50px; }
+    .sidebar li a {
+      padding: 15px 0 12px 0; }
+      .sidebar li a span {
+        font-size: 20px;
+        width: 100%;
+        padding-left: 25px;
+        color: #eee; }
+      .sidebar li a:hover {
+        background-color: #333; }
+
+/* Landing Page */
+.landing-background-section {
+  background-color: blue;
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 -15px 0 -15px;
+  color: #fff; }
+  .landing-background-section .nav-list li {
+    padding-right: 20px; }
+    .landing-background-section .nav-list li a {
+      color: #ccc;
+      font-size: 1.1em; }
+      .landing-background-section .nav-list li a:hover {
+        color: #fff; }
+  .landing-background-section .imac-image {
+    margin-top: 130px; }
+  .landing-background-section .main-title {
+    color: #fff;
+    margin-top: 200px;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3); }
+    .landing-background-section .main-title h1 {
+      font-size: 3.8em; }
+  .landing-background-section .full-height-para {
+    height: 600px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative; }
+    .landing-background-section .full-height-para .container {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto; }
+
+/* Projects */
+.project {
+  width: 250px;
+  height: 300px;
+  position: relative;
+  perspective: 800px;
+  color: #333; }
+  .project-flip {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+    border: 1px solid rgba(205, 205, 205, 0.79); }
+    .project-flip .content {
+      margin: 0;
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; }
+      .project-flip .content.front {
+        background-color: #fff;
+        border-radius: 4px; }
+      .project-flip .content.back {
+        background: #fcfcfc;
+        border-radius: 4px;
+        transform: rotateY(180deg);
+        padding: 10px; }
+    .project-flip:hover {
+      transform: rotateY(180deg); }
+  .project-header, .project-text {
+    padding: 10px;
+    z-index: 2; }
+  .project-header {
+    text-transform: capitalize;
+    margin-top: -70px; }
+  .project-text p {
+    margin-bottom: 2px; }
+  .project-image {
+    background-image: url("https://download.unsplash.com/photo-1433838552652-f9a46b332c40");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 65px;
+    z-index: 1; }
+  .project-team {
+    padding-left: 0;
+    padding-right: 0; }
+
+.profile-circle {
+  display: inline-block;
+  padding: 3px; }
+
+.add-project {
+  cursor: pointer;
+  color: #3d82e2; }
+  .add-project:hover {
+    color: #183b8d; }
